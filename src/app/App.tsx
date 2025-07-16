@@ -44,9 +44,6 @@ export type TasksState = Record<string, Task[]>
 
 type ThemeMode = 'dark' | 'light'
 
-// export const selectTodolists = (state: RootState): Todolist[] => state.todolists 
-// export const selectTasks = (state: RootState): TasksState => state.tasks
-
 export const App = () => {
   const todolists = useAppSelector(selectTodolists)
   const tasks = useAppSelector(selectTasks)
